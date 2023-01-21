@@ -45,20 +45,13 @@ fig.update_layout(
 fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
 st.plotly_chart(fig)
 
-col_1, col_2 = st.columns(2)
-
-with col_1:
-    st.header("This is column 1")
-    fig = px.line(
-        df, x='tahun', y='different_amount_yearly',
-        
-    )
-
-    fig.update_layout(
-            title_x=0.5, title_y=0.95, title_font_size=22, title_font_family="Arial",
-            autosize=False, margin={"r":0,"t":100,"l":0,"b":0}, template='simple_white'
-            )
-    st.plotly_chart(fig)
-
-with col_2:
-    st.header("This is column 2")
+st.header("This is column 1")
+fig = px.line(
+    df, x='tahun', y='different_amount_yearly', color='kabupaten',
+    title=f'Kenaikan upah_minimum Provinsi (UMP) tahunan<br> 2012-2022', markers=True
+)
+fig.update_layout(
+        title_x=0.5, title_y=0.95, title_font_size=22, title_font_family="Arial",
+        autosize=False, margin={"r":0,"t":100,"l":0,"b":0}, template='simple_white'
+        )
+st.plotly_chart(fig)
