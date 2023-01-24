@@ -45,13 +45,13 @@ fig.update_layout(
 fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
 st.plotly_chart(fig)
 
-st.header("This is column 1")
 fig = px.line(
-    df, x='tahun', y='different_amount_yearly', color='kabupaten',
-    title=f'Kenaikan upah_minimum Provinsi (UMP) tahunan<br> 2012-2022', markers=True
+    df, x='tahun', y='upah_minimum', color='kabupaten', markers=True, title=f'Riwayat Kenaikan Upah Minimum Provinsi DI-Yogyakarta (UMP) Tahun <br> 2012-2022'
 )
-fig.update_layout(
-        title_x=0.5, title_y=0.95, title_font_size=22, title_font_family="Arial",
-        autosize=False, margin={"r":0,"t":100,"l":0,"b":0}, template='simple_white'
-        )
 st.plotly_chart(fig)
+
+fig = px.line(
+    df, x='tahun', y='different_amount_yearly', color='kabupaten', markers=True, title=f'Riwayat Jumlah Perbedaan Kenaikan Upah Minimum Provinsi DI-Yogyakarta (UMP) Tahun <br> 2012-2022'
+)
+st.plotly_chart(fig)
+
