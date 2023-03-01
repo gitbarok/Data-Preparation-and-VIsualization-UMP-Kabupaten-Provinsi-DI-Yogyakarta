@@ -1,7 +1,7 @@
 # Data Preparation and Visualization UMP Kabupaten in Provinsi DI Yogyakarta
 Simple data preparation and visualization on UMP Kabupaten Provinsi DI Yogyakarta, for learning projects about how to preparing and how to turn data into something that people can read:
 
-and also i create visualization on tableau public, you can check on thins link : https://public.tableau.com/app/profile/rizky.mubarok/viz/VisualisasiUMPProvinsiDIY/VisualisasiUMPProvinsiDaerahIstimewaYogyakarta
+and i also create visualization on tableau public, you can check on this link : https://public.tableau.com/app/profile/rizky.mubarok/viz/VisualisasiUMPProvinsiDIY/VisualisasiUMPProvinsiDaerahIstimewaYogyakarta
 
 To DO:
 1. Finish data Visualization (100% out of 100%)
